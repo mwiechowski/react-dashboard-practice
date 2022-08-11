@@ -84,7 +84,7 @@ const Ecommerce = () => {
           </div>
 
           <div className='mt-10 flex fap-10 flex-wrap justify-center'>
-            <div className='border-r-1 border-color m-4 pr-10'>
+            <div className='border-r-0 border-color m-4 pr-0 sm:border-r-1 sm:pr-10'>
               <div>
                 <p className='flex justify-between items-center'>
                   <span className='text-3xl font-semibold'>
