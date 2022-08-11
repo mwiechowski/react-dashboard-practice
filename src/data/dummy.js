@@ -639,7 +639,6 @@ export const earningData = [
     title: 'Sales',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
-
     pcColor: 'green-600',
   },
   {
@@ -3083,11 +3082,11 @@ export const dropdownData = [
   },
 ];
 export const SparklineAreaData = [
-  { x: 1, yval: 2 },
-  { x: 2, yval: 6 },
-  { x: 3, yval: 8 },
-  { x: 4, yval: 5 },
-  { x: 5, yval: 10 },
+  { x: 0, xval: 1, yval: 2 },
+  { x: 1, xval: 2, yval: 6 },
+  { x: 2, xval: 3, yval: 8 },
+  { x: 3, xval: 4, yval: 5 },
+  { x: 4, xval: 5, yval: 10 },
 
 ];
 
@@ -3156,22 +3155,22 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jan', y: 120 },
+    { x: 'Feb', y: 120 },
+    { x: 'Mar', y: 150 },
+    { x: 'Apr', y: 165 },
+    { x: 'May', y: 20 },
+    { x: 'Jun', y: 250 },
+    { x: 'July', y: 80 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jan', y: 50 },
+    { x: 'Feb', y: 150 },
+    { x: 'Mar', y: 150 },
+    { x: 'Apr', y: 165 },
+    { x: 'May', y: 310 },
+    { x: 'Jun', y: 80 },
+    { x: 'July', y: 50 },
   ],
 ];
 
@@ -3183,7 +3182,6 @@ export const stackedCustomSeries = [
     name: 'Budget',
     type: 'StackingColumn',
     background: 'blue',
-
   },
 
   { dataSource: stackedChartData[1],
@@ -3192,7 +3190,6 @@ export const stackedCustomSeries = [
     name: 'Expense',
     type: 'StackingColumn',
     background: 'red',
-
   },
 
 ];
@@ -3210,8 +3207,8 @@ export const stackedPrimaryXAxis = {
 
 export const stackedPrimaryYAxis = {
   lineStyle: { width: 0 },
-  minimum: 100,
-  maximum: 400,
+  minimum: 0,
+  //maximum: 400,
   interval: 100,
   majorTickLines: { width: 0 },
   majorGridLines: { width: 1 },
